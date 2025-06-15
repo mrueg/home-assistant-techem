@@ -1,0 +1,15 @@
+{
+    "domain": "techem",
+    "name": "Techem (Verbrauchsinfo)",
+    "codeowners": ["@mrueg"],
+    "config_flow": true,
+    "dependencies": [],
+    "documentation": "https://github.com/mrueg/home-assistant-techem",
+    "homekit": {},
+    "iot_class": "cloud_polling",
+    "quality_scale": "bronze",
+    "requirements": ["msal" ,"selenium", "requests"],
+    "ssdp": [],
+    "version": "0.1.0",
+    "zeroconf": []
+}
