@@ -147,7 +147,7 @@ async def test_statistics_skip_implausible(
 
 @pytest.mark.parametrize(
     ("language", "name"),
-    [("en", "Techem Heating energy")],
+    [("en", "Techem Heating energy"), ("de", "Techem Heizenergie")],
 )
 @pytest.mark.usefixtures("portal", "mock_refresh")
 async def test_statistic_names_translated(
