@@ -1,0 +1,51 @@
+{
+  "totalCount": 4,
+  "count": 4,
+  "revision": null,
+  "data": [
+    {
+      "period": "2026-08",
+      "service": "HEATING",
+      "unitOfMeasure": "KWH",
+      "status": "OK",
+      "amount": 0.0,
+      "quality": 1.0,
+      "revision": 1,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    },
+    {
+      "period": "2026-08",
+      "service": "HEATING",
+      "unitOfMeasure": "HCU",
+      "status": "OK",
+      "amount": 0.0,
+      "quality": 1.0,
+      "revision": 1,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    },
+    {
+      "period": "2026-08",
+      "service": "HOT_WATER",
+      "unitOfMeasure": "KWH",
+      "status": "OK",
+      "amount": 347.4,
+      "quality": 1.0,
+      "revision": 1,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    },
+    {
+      "period": "2026-08",
+      "service": "HOT_WATER",
+      "unitOfMeasure": "M3",
+      "status": "OK",
+      "amount": 2.4,
+      "quality": 1.0,
+      "revision": 1,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    }
+  ]
+}

@@ -1,15 +1,17 @@
 {
     "domain": "techem",
-    "name": "Techem (Verbrauchsinfo)",
-    "codeowners": ["@mrueg"],
+    "name": "Techem",
+    "codeowners": [
+        "@mrueg"
+    ],
     "config_flow": true,
-    "dependencies": [],
+    "dependencies": [
+        "recorder"
+    ],
     "documentation": "https://github.com/mrueg/home-assistant-techem",
-    "homekit": {},
+    "integration_type": "service",
     "iot_class": "cloud_polling",
-    "quality_scale": "bronze",
-    "requirements": ["msal" ,"selenium", "requests"],
-    "ssdp": [],
-    "version": "0.1.0",
-    "zeroconf": []
+    "issue_tracker": "https://github.com/mrueg/home-assistant-techem/issues",
+    "requirements": [],
+    "version": "0.1.0"
 }

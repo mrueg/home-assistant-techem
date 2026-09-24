@@ -1,0 +1,51 @@
+{
+  "totalCount": 4,
+  "count": 4,
+  "revision": null,
+  "data": [
+    {
+      "period": "2025-01",
+      "service": "HEATING",
+      "unitOfMeasure": "KWH",
+      "status": "EED_NE_BLACKLIST_IMPLAUSIBLE",
+      "amount": 8934.9,
+      "quality": 1.0,
+      "revision": 6,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    },
+    {
+      "period": "2025-01",
+      "service": "HEATING",
+      "unitOfMeasure": "HCU",
+      "status": "EED_NE_BLACKLIST_IMPLAUSIBLE",
+      "amount": 3489.0,
+      "quality": 1.0,
+      "revision": 6,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    },
+    {
+      "period": "2025-01",
+      "service": "HOT_WATER",
+      "unitOfMeasure": "KWH",
+      "status": "EED_NE_BLACKLIST_IMPLAUSIBLE",
+      "amount": 508.9,
+      "quality": 1.0,
+      "revision": 6,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    },
+    {
+      "period": "2025-01",
+      "service": "HOT_WATER",
+      "unitOfMeasure": "M3",
+      "status": "EED_NE_BLACKLIST_IMPLAUSIBLE",
+      "amount": 3.3,
+      "quality": 1.0,
+      "revision": 6,
+      "createdAt": "2026-09-24T22:26:17Z",
+      "mixedHeatingEquipment": false
+    }
+  ]
+}
