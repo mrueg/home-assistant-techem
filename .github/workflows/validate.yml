@@ -16,14 +16,16 @@ jobs:
     name: Hassfest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7.0.1
+      # home-assistant/actions has no release containing hassfest (only 1.0.0
+      # from 2020), so it can only be used from master
       - uses: home-assistant/actions/hassfest@master
 
   hacs:
     name: HACS
     runs-on: ubuntu-latest
     steps:
-      - uses: hacs/action@main
+      - uses: hacs/action@22.5.0
         with:
           category: integration
           # The brand icon has not been submitted to home-assistant/brands yet
