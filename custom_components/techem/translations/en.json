@@ -1,0 +1,125 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Log in with your account for the Techem tenant portal (mieter.techem.de).",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "The email address you use to log in to mieter.techem.de."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Authenticate Integration",
+        "description": "The login for {username} failed. Please enter the password again.",
+        "data": {
+          "password": "Password"
+        }
+      },
+      "reconfigure": {
+        "description": "Update the login for the Techem tenant portal.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "The email address you use to log in to mieter.techem.de."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "no_rental_agreement": "No residential unit is linked to this account.",
+      "unknown": "Unexpected error",
+      "interaction_required": "Log in once on mieter.techem.de in a browser to complete a pending step, e.g. accepting new terms."
+    },
+    "abort": {
+      "already_configured": "Account is already configured",
+      "reauth_successful": "Re-authentication was successful",
+      "reconfigure_successful": "Re-configuration was successful",
+      "wrong_account": "This login belongs to a different residential unit. Add it as a new integration instead."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "heating_kwh": {
+        "name": "Heating energy"
+      },
+      "heating_kwh_average": {
+        "name": "Heating energy (comparable average)"
+      },
+      "heating_hcu": {
+        "name": "Heating units"
+      },
+      "heating_hcu_average": {
+        "name": "Heating units (comparable average)"
+      },
+      "hot_water_kwh": {
+        "name": "Hot water energy"
+      },
+      "hot_water_kwh_average": {
+        "name": "Hot water energy (comparable average)"
+      },
+      "hot_water_m3": {
+        "name": "Hot water volume"
+      },
+      "hot_water_m3_average": {
+        "name": "Hot water volume (comparable average)"
+      },
+      "cold_water_m3": {
+        "name": "Cold water volume"
+      },
+      "cold_water_m3_average": {
+        "name": "Cold water volume (comparable average)"
+      },
+      "cooling_kwh": {
+        "name": "Cooling energy"
+      },
+      "cooling_kwh_average": {
+        "name": "Cooling energy (comparable average)"
+      },
+      "heating_kwh_billing_period": {
+        "name": "Heating energy (billing period)"
+      },
+      "heating_hcu_billing_period": {
+        "name": "Heating units (billing period)"
+      },
+      "hot_water_kwh_billing_period": {
+        "name": "Hot water energy (billing period)"
+      },
+      "hot_water_m3_billing_period": {
+        "name": "Hot water volume (billing period)"
+      },
+      "cold_water_m3_billing_period": {
+        "name": "Cold water volume (billing period)"
+      },
+      "cooling_kwh_billing_period": {
+        "name": "Cooling energy (billing period)"
+      }
+    }
+  },
+  "issues": {
+    "interaction_required": {
+      "title": "The login needs a step in the browser",
+      "description": "Techem accepted the password for {username}, but asks for an additional step during login, for example accepting new terms of use. Log in once on [mieter.techem.de]({portal_url}) and complete it. The integration retries automatically."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "description": "Techem marks some readings as implausible and hides them on the portal, often whole months of the heating season.",
+        "data": {
+          "skip_implausible": "Skip implausible readings",
+          "billing_start_month": "Billing period start month"
+        },
+        "data_description": {
+          "skip_implausible": "Treat readings Techem marks as implausible as zero consumption in the statistics and show the newest plausible reading in the sensors, like the portal does.",
+          "billing_start_month": "The month your billing period (see your heating cost statement) starts in. The billing period sensors sum up the consumption since then. 1 = January, i.e. the calendar year."
+        }
+      }
+    }
+  }
+}

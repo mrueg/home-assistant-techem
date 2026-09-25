@@ -1,0 +1,125 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Melde dich mit deinem Konto für das Techem Mieterportal (mieter.techem.de) an.",
+        "data": {
+          "username": "E-Mail",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "username": "Die E-Mail-Adresse, mit der du dich bei mieter.techem.de anmeldest."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Integration erneut authentifizieren",
+        "description": "Die Anmeldung für {username} ist fehlgeschlagen. Bitte gib das Passwort erneut ein.",
+        "data": {
+          "password": "Passwort"
+        }
+      },
+      "reconfigure": {
+        "description": "Aktualisiere die Anmeldedaten für das Techem Mieterportal.",
+        "data": {
+          "username": "E-Mail",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "username": "Die E-Mail-Adresse, mit der du dich bei mieter.techem.de anmeldest."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "invalid_auth": "Ungültige Authentifizierung",
+      "no_rental_agreement": "Mit diesem Konto ist keine Wohneinheit verknüpft.",
+      "unknown": "Unerwarteter Fehler",
+      "interaction_required": "Melde dich einmal im Browser auf mieter.techem.de an, um einen ausstehenden Schritt abzuschließen, z. B. neue Nutzungsbedingungen zu akzeptieren."
+    },
+    "abort": {
+      "already_configured": "Konto wurde bereits konfiguriert",
+      "reauth_successful": "Die erneute Authentifizierung war erfolgreich",
+      "reconfigure_successful": "Die Neukonfiguration war erfolgreich",
+      "wrong_account": "Diese Anmeldung gehört zu einer anderen Wohneinheit. Füge sie stattdessen als neue Integration hinzu."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "heating_kwh": {
+        "name": "Heizenergie"
+      },
+      "heating_kwh_average": {
+        "name": "Heizenergie (Durchschnitt vergleichbarer Wohnungen)"
+      },
+      "heating_hcu": {
+        "name": "Heizkosteneinheiten"
+      },
+      "heating_hcu_average": {
+        "name": "Heizkosteneinheiten (Durchschnitt vergleichbarer Wohnungen)"
+      },
+      "hot_water_kwh": {
+        "name": "Warmwasserenergie"
+      },
+      "hot_water_kwh_average": {
+        "name": "Warmwasserenergie (Durchschnitt vergleichbarer Wohnungen)"
+      },
+      "hot_water_m3": {
+        "name": "Warmwassermenge"
+      },
+      "hot_water_m3_average": {
+        "name": "Warmwassermenge (Durchschnitt vergleichbarer Wohnungen)"
+      },
+      "cold_water_m3": {
+        "name": "Kaltwassermenge"
+      },
+      "cold_water_m3_average": {
+        "name": "Kaltwassermenge (Durchschnitt vergleichbarer Wohnungen)"
+      },
+      "cooling_kwh": {
+        "name": "Kühlenergie"
+      },
+      "cooling_kwh_average": {
+        "name": "Kühlenergie (Durchschnitt vergleichbarer Wohnungen)"
+      },
+      "heating_kwh_billing_period": {
+        "name": "Heizenergie (Abrechnungszeitraum)"
+      },
+      "heating_hcu_billing_period": {
+        "name": "Heizkosteneinheiten (Abrechnungszeitraum)"
+      },
+      "hot_water_kwh_billing_period": {
+        "name": "Warmwasserenergie (Abrechnungszeitraum)"
+      },
+      "hot_water_m3_billing_period": {
+        "name": "Warmwassermenge (Abrechnungszeitraum)"
+      },
+      "cold_water_m3_billing_period": {
+        "name": "Kaltwassermenge (Abrechnungszeitraum)"
+      },
+      "cooling_kwh_billing_period": {
+        "name": "Kühlenergie (Abrechnungszeitraum)"
+      }
+    }
+  },
+  "issues": {
+    "interaction_required": {
+      "title": "Die Anmeldung erfordert einen Schritt im Browser",
+      "description": "Techem hat das Passwort für {username} akzeptiert, verlangt bei der Anmeldung aber einen zusätzlichen Schritt, zum Beispiel das Akzeptieren neuer Nutzungsbedingungen. Melde dich einmal auf [mieter.techem.de]({portal_url}) an und schließe ihn ab. Die Integration versucht es automatisch erneut."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "description": "Techem markiert manche Werte als unplausibel und blendet sie im Portal aus, oft ganze Monate der Heizperiode.",
+        "data": {
+          "skip_implausible": "Unplausible Werte überspringen",
+          "billing_start_month": "Startmonat des Abrechnungszeitraums"
+        },
+        "data_description": {
+          "skip_implausible": "Werte, die Techem als unplausibel markiert, in den Statistiken als Verbrauch von null behandeln und in den Sensoren den neuesten plausiblen Wert anzeigen, wie im Portal.",
+          "billing_start_month": "Der Monat, in dem dein Abrechnungszeitraum (siehe Heizkostenabrechnung) beginnt. Die Sensoren für den Abrechnungszeitraum summieren den Verbrauch seitdem. 1 = Januar, also das Kalenderjahr."
+        }
+      }
+    }
+  }
+}

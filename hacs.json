@@ -1,5 +1,4 @@
 {
-  "name": "Techem (Verbrauchsinfo)",
-  "hide_default_branch": false,
-  "render_readme": true
+  "name": "Techem",
+  "homeassistant": "2026.9.0"
 }

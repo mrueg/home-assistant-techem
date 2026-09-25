@@ -1,0 +1,21 @@
+{
+  "totalCount": null,
+  "count": 2,
+  "revision": 1,
+  "data": [
+    {
+      "service": "HEATING",
+      "unitOfMeasure": "KWH",
+      "status": "OK",
+      "amount": 189.74448,
+      "createdAt": "2026-09-03T10:08:53Z"
+    },
+    {
+      "service": "HOT_WATER",
+      "unitOfMeasure": "KWH",
+      "status": "OK",
+      "amount": 288.911507,
+      "createdAt": "2026-09-03T10:08:53Z"
+    }
+  ]
+}
